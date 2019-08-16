@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.auth');
+});
+Route::get('/home', function () {
+    return view('pages.home');
+});
+Route::get('/parkir', function () {
+    return view('pages.parkir');
 });
