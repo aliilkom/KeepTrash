@@ -17,6 +17,9 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('pages.home');
 });
+Route::get('/profile', function () {
+    return view('pages.profile');
+});
 Route::get('/parkir', function () {
     return view('pages.parkir');
 });

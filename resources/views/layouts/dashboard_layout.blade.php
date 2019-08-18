@@ -32,8 +32,7 @@ License: You must have a valid license purchased only from themeforest(the above
 					<div class="m-grid__item m-body__nav">
 						<div class="m-stack m-stack--ver m-stack--desktop">
 							<!-- begin::Horizontal Menu -->
-                            @yield('navbar1')
-                            @yield('navbar2')
+                            @include('includes.navbar')
 							<!-- end::Horizontal Menu -->                                                                        <!--begin::Search-->
 							<div class="m-stack__item m-stack__item--middle m-dropdown m-dropdown--arrow m-dropdown--large m-dropdown--mobile-full-width m-dropdown--align-right m-dropdown--skin-light m-header-search m-header-search--expandable m-header-search--skin-" id="m_quicksearch" m-quicksearch-mode="default">
 								<!--begin::Search Form -->
@@ -72,13 +71,8 @@ License: You must have a valid license purchased only from themeforest(the above
 					</div>
 					<div class="m-grid__item m-grid__item--fluid m-grid m-grid--desktop m-grid--ver-desktop m-body__content">
 						<div class="m-grid__item m-grid__item--fluid m-wrapper">
-							
 							<div class="m-content">
-								
-                            @yield('home')	
-                            @yield('parkir') 
-
-
+                            @yield('section')
 							</div>
 						</div>
 					</div>
@@ -698,37 +692,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		<div id="m_scroll_top" class="m-scroll-top">
 			<i class="la la-arrow-up"></i>
 		</div>
-		<!-- end::Scroll Top -->			<!-- begin::Quick Nav -->
-		<ul class="m-nav-sticky" style="margin-top: 30px;">
-			<!--
-			<li class="m-nav-sticky__item" data-toggle="m-tooltip" title="Showcase" data-placement="left">
-				<a href="">
-					<i class="la la-eye"></i>
-				</a>
-			</li>
-			<li class="m-nav-sticky__item" data-toggle="m-tooltip" title="Pre-sale Chat" data-placement="left">
-				<a href="" >
-					<i class="la la-comments-o"></i>
-				</a>
-			</li>
-			-->
-			<li class="m-nav-sticky__item" data-toggle="m-tooltip" title="Purchase" data-placement="left">
-				<a href="https://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes" target="_blank">
-					<i class="la la-cart-arrow-down"></i>
-				</a>
-			</li>
-			<li class="m-nav-sticky__item" data-toggle="m-tooltip" title="Documentation" data-placement="left">
-				<a href="https://keenthemes.com/metronic/documentation.html" target="_blank">
-					<i class="la la-code-fork"></i>
-				</a>
-			</li>
-			<li class="m-nav-sticky__item" data-toggle="m-tooltip" title="Support" data-placement="left">
-				<a href="https://keenthemes.com/forums/forum/support/metronic5/" target="_blank">
-					<i class="la la-life-ring"></i>
-				</a>
-			</li>
-		</ul>
-		<!-- begin::Quick Nav -->	
+		<!-- end::Scroll Top -->				
     	<!--begin::Base Scripts -->
 		<script src="assets/vendors/base/vendors.bundle.js" type="text/javascript"></script>
 		<script src="assets/demo/demo4/base/scripts.bundle.js" type="text/javascript"></script>
