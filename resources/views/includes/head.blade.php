@@ -1,6 +1,6 @@
 <meta charset="utf-8" />
 <title>
-	Parkour
+	KeepTrash
 </title>
 <meta name="description" content="Latest updates and statistic charts">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,4 +23,4 @@
 <link href="assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
 <link href="assets/demo/demo4/base/style.bundle.css" rel="stylesheet" type="text/css" />
 <!--end::Base Styles -->
-<link rel="shortcut icon" href="assets/demo/demo4/media/img/logo/parkour.ico" />
+<link rel="shortcut icon" href="assets/demo/demo4/media/img/logo/Icon_Keeptrash.ico" />
