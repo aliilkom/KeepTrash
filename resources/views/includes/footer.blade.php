@@ -5,7 +5,7 @@
 				<span class="m-footer__copyright">
 					2019 &copy; Copyright by
 						<a href="#" class="m-link">
-							Parkour
+							KeepTrash
 						</a>
 				</span>
 			</div>

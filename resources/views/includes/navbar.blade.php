@@ -8,9 +8,23 @@
 			</a>
 		</li>
 		<li class="m-menu__item">
-			<a  href="/parkir" class="m-menu__link">
+			<a  href="/barangbekas" class="m-menu__link">
 				<span class="m-menu__link-text">
-					Parkir
+					Barang Bekas 
+				</span>
+			</a>
+		</li>
+		<li class="m-menu__item">
+			<a  href="/tukarpoin" class="m-menu__link">
+				<span class="m-menu__link-text">
+					Tukar Poin
+				</span>
+			</a>
+		</li>
+		<li class="m-menu__item">
+			<a  href="/reward" class="m-menu__link">
+				<span class="m-menu__link-text">
+					Reward 
 				</span>
 			</a>
 		</li>

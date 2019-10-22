@@ -20,6 +20,12 @@ Route::get('/home', function () {
 Route::get('/profile', function () {
     return view('pages.profile');
 });
-Route::get('/parkir', function () {
-    return view('pages.parkir');
+Route::get('/barangbekas', function () {
+    return view('pages.barangbekas');
+});
+Route::get('/tukarpoin', function () {
+    return view('pages.tukarpoin');
+});
+Route::get('/reward', function () {
+    return view('pages.reward');
 });

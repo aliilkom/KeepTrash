@@ -1,7 +1,7 @@
 @extends('layouts.dashboard_layout')
 @section('section')
 <!--Begin::Section-->
-<h3 class="m-subheader__title ">Parkir</h3>
+<h3 class="m-subheader__title ">Tukar Poin</h3>
 <div class="m-content">
 	<div class="row">
 		<div class="col-xl-12">
@@ -14,7 +14,7 @@
 								<i class="flaticon-map-location"></i>
 							</span>
 							<h3 class="m-portlet__head-text">
-								Parkir
+								Tukar Poin
 							</h3>
 						</div>
 					</div>
@@ -25,7 +25,7 @@
 									<span>
 										<i class="la la-plus"></i>
 										<span>
-											Add Event
+											Tambah Barang
 										</span>
 									</span>
 								</a>

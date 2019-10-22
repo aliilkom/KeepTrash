@@ -5,25 +5,18 @@
 			<div class="m-stack m-stack--ver m-stack--general m-stack--inline">
 				<div class="m-stack__item m-stack__item--middle m-brand__logo">
 					<a href="/home" class="m-brand__logo-wrapper">
-						<img src="assets/app/media/img/logos/Icon_Keeptrash.png" style="width:50%">
+						<img src="assets/app/media/img/logos/Icon_Keeptrash.png" style="width:90%">
 					</a>
 				</div>
 				<div class="m-stack__item m-stack__item--middle m-brand__tools">
-					
-					<!-- begin::Responsive Header Menu Toggler-->
-					<a id="m_aside_header_menu_mobile_toggle" href="javascript:;" class="m-brand__icon m-brand__toggler m--visible-tablet-and-mobile-inline-block">
-						<span></span>
-					</a>
-					<!-- end::Responsive Header Menu Toggler-->
-					<!-- begin::Topbar Toggler-->
-					<a id="m_aside_header_topbar_mobile_toggle" href="javascript:;" class="m-brand__icon m--visible-tablet-and-mobile-inline-block">
-						<i class="flaticon-more"></i>
-					</a>
-					<!--end::Topbar Toggler-->
+				<h4 class="font-weight-bold text-success">
+						KeepTrash
+					</h4>
 				</div>
 			</div>
 		</div>
-		<!-- end::Brand -->                                        					<!-- begin::Topbar -->
+		<!-- end::Brand -->                                        					
+		<!-- begin::Topbar -->
 		<div class="m-grid__item m-grid__item--fluid m-header-head" id="m_header_nav">
 			<div id="m_header_topbar" class="m-topbar  m-stack m-stack--ver m-stack--general">
 				<div class="m-stack__item m-topbar__nav-wrapper">

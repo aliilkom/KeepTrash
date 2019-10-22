@@ -3,8 +3,11 @@
 <div class="m-login__container">
 						<div class="m-login__logo">
 							<a href="#">
-								<img src="assets/app/media/img/logos/Icon_Keeptrash.png" style="width:100%">
+								<img src="assets/app/media/img/logos/Icon_Keeptrash.png" style="width:70%">
 							</a>
+							<h1 class="font-weight-bold text-success">
+								KeepTrash
+							</h1>
 						</div>
 						<div class="m-login__signin">
 							<div class="m-login__head">
