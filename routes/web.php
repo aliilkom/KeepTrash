@@ -12,10 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('pages.auth');
+    return view('auth.welcome');
 });
-Route::get('/home', function () {
-    return view('pages.home');
+Route::get('/dashboard', function () {
+    return view('pages.dashboard');
 });
 Route::get('/profile', function () {
     return view('pages.profile');
@@ -29,3 +29,9 @@ Route::get('/tukarpoin', function () {
 Route::get('/reward', function () {
     return view('pages.reward');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+

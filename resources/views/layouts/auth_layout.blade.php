@@ -27,6 +27,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				</div>
 			</div>
 		</div>
+		
 		<!-- end:: Page -->
     	<!--begin::Base Scripts -->
 		<script src="assets/vendors/base/vendors.bundle.js" type="text/javascript"></script>

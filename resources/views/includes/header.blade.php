@@ -298,7 +298,7 @@
 								</span>
 								<span class="m-topbar__username m--hidden-tablet m--hidden-mobile m--padding-right-15">
 									<span class="m-link">
-										Nick
+									{{ Auth::user()->name }}
 									</span>
 								</span>
 								<span class="m-topbar__userpic">
@@ -315,10 +315,10 @@
 											</div>
 											<div class="m-card-user__details">
 												<span class="m-card-user__name m--font-weight-500">
-													Mark Andre
+												{{ Auth::user()->name }}
 												</span>
 												<a href="" class="m-card-user__email m--font-weight-300 m-link">
-													mark.andre@gmail.com
+												{{ Auth::user()->email }}
 												</a>
 											</div>
 										</div>
@@ -383,8 +383,13 @@
 												</li>
 												<li class="m-nav__separator m-nav__separator--fit"></li>
 												<li class="m-nav__item">
-													<a href="/" class="btn m-btn--pill btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder">
+												<a class="dropdown-item" href="{{ route('logout') }}"
+                                       				onclick="event.preventDefault();
+                                                    document.getElementById('logout-form').submit();">
 														Logout
+														<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                       						 @csrf
+                                    					</form>
 													</a>
 												</li>
 											</ul>
