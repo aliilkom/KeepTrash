@@ -21,7 +21,7 @@
 					<div class="m-portlet__head-tools">
 						<ul class="m-portlet__nav">
 							<li class="m-portlet__nav-item">
-								<a href="#" class="btn btn-accent m-btn m-btn--custom m-btn--icon m-btn--pill m-btn--air">
+								<a href="/reward/create" class="btn btn-accent m-btn m-btn--custom m-btn--icon m-btn--pill m-btn--air">
 									<span>
 										<i class="la la-plus"></i>
 										<span>
@@ -34,14 +34,37 @@
 					</div>
 				</div>
 				<div class="m-portlet__body">
-					<!--begin: Datatable -->
-					<div class="m_datatable" id="m_datatable_latest_orders"></div>
-					<!--end: Datatable -->
+				<table class="table table-striped">
+    <thead align="center">
+        <tr>
+          <th>Nama Reward</th>
+          <th>Keterangan</th>
+          <th>Action</th>
+        </tr>
+    </thead>
+    <tbody align="center">
+        @foreach($reward as $rw)
+        <tr>
+            <td>{{$rw->nama_reward}}</td>
+            <td>{{$rw->keterangan}}</td>
+			
+            <td>
+				<a href="{{ route('reward.edit',$rw->id)}}" class="btn btn-primary">Edit</a>
+			
+				<form action="{{ route('reward.destroy', $rw->id)}}" method="post" style="display: inline;">
+					<button class="btn btn-danger" type="submit">Delete</button>
+                  @csrf
+                  @method('DELETE')
+                </form>
+            </td>
+        </tr>
+        @endforeach
+    </tbody>
+  </table>
 				</div>
 			</div>
 			<!--end::Portlet-->
 		</div>
 	</div>
 	<!--End::Section-->
-</ class="m-content">
 @stop

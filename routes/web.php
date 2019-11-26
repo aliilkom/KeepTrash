@@ -14,24 +14,18 @@
 Route::get('/', function () {
     return view('auth.welcome');
 });
-Route::get('/dashboard', function () {
-    return view('pages.dashboard');
-});
+
 Route::get('/profile', function () {
     return view('pages.profile');
 });
-Route::get('/barangbekas', function () {
-    return view('pages.barangbekas');
-});
-Route::get('/tukarpoin', function () {
-    return view('pages.tukarpoin');
-});
-Route::get('/reward', function () {
-    return view('pages.reward');
-});
 
 Auth::routes();
-
+//Dashboard
 Route::get('/home', 'HomeController@index')->name('home');
-
+//Barang Bekas
+Route::resource('barangbekas', 'BarangbekasController');
+//Tukar Poin
+Route::resource('tukarpoin', 'TukarpoinController');
+//Reward
+Route::resource('reward', 'RewardController');
 
