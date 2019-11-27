@@ -1,7 +1,7 @@
 @extends('layouts.dashboard_layout')
 @section('section')
 <!--Begin::Section-->
-<h3 class="m-subheader__title ">Dashboard</h3>
+<h3 class="m-subheader__title ">Detail Pengepul</h3>
 <div class="m-content">
 	<div class="m-portlet">
 	<div class="m-portlet__body  m-portlet__body--no-padding">
@@ -11,13 +11,32 @@
 				<div class="m-widget14">
 					<div class="m-widget14__header m--margin-bottom-30">
 						<h3 class="m-widget14__title">
-						Rating
+						Poin
 						</h3>
 					</div>
-					<h2 class="m--font-brand">
-						8/10
-					</h2>
+					<div class="m-widget25">
+					<span class="m-widget25__price m--font-brand">
+					{{ Auth::user()->poin }}
+					</span>
 					
+					</div>
+				</div>
+				<!--end:: Widgets/Daily Sales-->
+			</div>
+			<div class="col-xl-4">
+				<!--begin:: Widgets/Daily Sales-->
+				<div class="m-widget14">
+					<div class="m-widget14__header m--margin-bottom-30">
+						<h3 class="m-widget14__title">
+						Reward
+						</h3>
+					</div>
+					<div class="m-widget25">
+					<span class="m-widget25__price m--font-danger">
+						Reward 1
+					</span>
+					
+					</div>
 				</div>
 				<!--end:: Widgets/Daily Sales-->
 			</div>
@@ -26,7 +45,7 @@
 				<div class="m-widget14">
 					<div class="m-widget14__header">
 						<h3 class="m-widget14__title">
-							Info Barang Bekas
+							Log Setor
 						</h3>
 					</div>
 					<div class="row  align-items-center">
@@ -36,66 +55,25 @@
 								<div class="m-widget14__legend">
 									<span class="m-widget14__legend-bullet m--bg-accent"></span>
 									<span class="m-widget14__legend-text">
-									100 Kg Barang 1
+										Setor 1
 									</span>
 								</div>
 								<div class="m-widget14__legend">
 									<span class="m-widget14__legend-bullet m--bg-warning"></span>
 									<span class="m-widget14__legend-text">
-									150 Kg Barang 2
+										Setor 2
 									</span>
 								</div>
 								<div class="m-widget14__legend">
 									<span class="m-widget14__legend-bullet m--bg-brand"></span>
 									<span class="m-widget14__legend-text">
-									200 Kg Barang 3
+										Setor 3
 									</span>
 								</div>
 								<div class="m-widget14__legend">
 									<span class="m-widget14__legend-bullet m--bg-danger"></span>
 									<span class="m-widget14__legend-text">
-									250 Kg Barang 4
-									</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				</div>
-			<div class="col-xl-4">
-				<!--begin:: Widgets/Revenue Change-->
-				<div class="m-widget14">
-					<div class="m-widget14__header">
-						<h3 class="m-widget14__title">
-							Log Transaksi
-						</h3>
-					</div>
-					<div class="row  align-items-center">
-						
-						<div class="col">
-							<div class="m-widget14__legends">
-								<div class="m-widget14__legend">
-									<span class="m-widget14__legend-bullet m--bg-accent"></span>
-									<span class="m-widget14__legend-text">
-									Transaksi 1
-									</span>
-								</div>
-								<div class="m-widget14__legend">
-									<span class="m-widget14__legend-bullet m--bg-warning"></span>
-									<span class="m-widget14__legend-text">
-									Transaksi 2
-									</span>
-								</div>
-								<div class="m-widget14__legend">
-									<span class="m-widget14__legend-bullet m--bg-brand"></span>
-									<span class="m-widget14__legend-text">
-									Transaksi 3
-									</span>
-								</div>
-								<div class="m-widget14__legend">
-									<span class="m-widget14__legend-bullet m--bg-danger"></span>
-									<span class="m-widget14__legend-text">
-									Transaksi 4
+										Setor 4
 									</span>
 								</div>
 							</div>
@@ -117,7 +95,7 @@
 				<div class="m-portlet__head-caption">
 					<div class="m-portlet__head-title">
 						<h3 class="m-portlet__head-text">
-							Transaksi Setor
+							Daftar Pengepul
 						</h3>
 					</div>
 				</div>
@@ -127,21 +105,21 @@
 				<table class="table table-striped">
     <thead align="center">
         <tr>
-          <th>Penyetor</th>
-          <th>Poin</th>
-          <th>Reward</th>
-          <th>Transaksi</th>
+          <th>Pengepul</th>
+          <th>Lokasi</th>
+          <th>No HP</th>
+          <th>Informasi</th>
         </tr>
     </thead>
     <tbody align="center">
-	@foreach($user as $user)
+        @foreach($user as $user)
         <tr>
-			<td>{{$user->name}}</td>
-            <td>{{$user->poin}}</td>
-            <td></td>
-            <td><a href="{{ route('transaksi.index')}}" class="btn btn-info" type="submit">Setor</a></td>
+            <td>{{$user->name}}</td>
+            <td>{{$user->lokasi}}</td>
+            <td>{{$user->no_hp}}</td>
+            <td><a href="{{ route('detailpengepul.index')}}" class="btn btn-info" type="submit">Detail</a></td>
         </tr>
-		@endforeach
+        @endforeach
     </tbody>
   </table>
 				</div>

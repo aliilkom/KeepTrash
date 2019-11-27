@@ -7,6 +7,7 @@
 				</span>
 			</a>
 		</li>
+		@if(Auth::user()->is_pengepul == "Pengepul")
 		<li class="m-menu__item">
 			<a  href="/barangbekas" class="m-menu__link">
 				<span class="m-menu__link-text">
@@ -28,5 +29,6 @@
 				</span>
 			</a>
 		</li>
+		@endif
 	</ul>
 </div>
